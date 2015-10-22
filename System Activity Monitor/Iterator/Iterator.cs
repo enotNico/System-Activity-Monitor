@@ -12,12 +12,16 @@ namespace System_Activity_monitor.Iterator
         private Processes _items;
         private int _current = 0;
         private int _step = 1;
-
         public Iterator(Processes collection)
         {
             this._items = collection;
         }
 
+        public int Count
+        {
+            get { return _items.Count; }
+        }
+        
         public Process First()
         {
             _current = 0;
@@ -28,7 +32,9 @@ namespace System_Activity_monitor.Iterator
         {
             _current += _step;
             if (!IsDone())
+            {
                 return _items[_current] as Process;
+            }
             return null;
         }
 
@@ -40,10 +46,6 @@ namespace System_Activity_monitor.Iterator
         public Process CurrentItem()
         {
             return _items[_current] as Process;
-        }
-        public int Count
-        {
-            get { return _items.Count; }
         }
     }
 }

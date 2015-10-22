@@ -11,20 +11,24 @@ namespace System_Activity_monitor.Iterator
     public class Processes : ICollection
     {
         private ArrayList _items = new ArrayList();
+        public Processes(Process[] p)
+        {
+            _items.AddRange(p);
+        }
+
+
+        public int Count
+        {
+            get { return _items.Count; }
+        }
 
         public object this[int index]
         {
             get { return _items[index]; }
             set { _items.Add(value); }
         }
-        public int Count
-        {
-            get { return _items.Count; }
-        }
-        public Processes(Process[] p)
-        {
-            _items.AddRange(p);
-        }
+
+
         public Iterator CreateIterator()
         {
             return new Iterator(this);
@@ -32,6 +36,6 @@ namespace System_Activity_monitor.Iterator
         //public int Count
         //{
         //    get { return _items.Count; }
-        //}    
+        //}   
     }
 }

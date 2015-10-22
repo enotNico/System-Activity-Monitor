@@ -23,7 +23,7 @@ namespace System_Activity_Monitor
     {
         public MainWindow()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         //public List<string> ProcessesList()
@@ -39,6 +39,5 @@ namespace System_Activity_Monitor
         //    }
         //    return st;
         //}
-
     }
 }
