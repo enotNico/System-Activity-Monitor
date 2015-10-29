@@ -21,7 +21,7 @@ namespace System_Activity_monitor.Iterator
             get { return _items.Count; }
         }
 
-        public Object this[int index]
+        public object this[int index]
         {
             get { return _items[index]; }
             set { _items.Add(value); }
