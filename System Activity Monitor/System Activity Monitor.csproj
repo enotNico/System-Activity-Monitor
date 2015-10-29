@@ -71,6 +71,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\Invoker.cs" />
+    <Compile Include="Command\NoCommand.cs" />
+    <Compile Include="Command\PressKeyOnKeyboardCommand.cs" />
     <Compile Include="Iterator\ICollection.cs" />
     <Compile Include="Iterator\IIterator.cs" />
     <Compile Include="Iterator\Iterator.cs" />

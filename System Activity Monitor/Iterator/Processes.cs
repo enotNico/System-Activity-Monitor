@@ -16,26 +16,20 @@ namespace System_Activity_monitor.Iterator
             _items.AddRange(p);
         }
 
-
         public int Count
         {
             get { return _items.Count; }
         }
 
-        public object this[int index]
+        public Object this[int index]
         {
             get { return _items[index]; }
             set { _items.Add(value); }
         }
 
-
         public Iterator CreateIterator()
         {
             return new Iterator(this);
         }
-        //public int Count
-        //{
-        //    get { return _items.Count; }
-        //}   
     }
 }
