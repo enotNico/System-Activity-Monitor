@@ -3,9 +3,9 @@
 
 #define   Publisher  "Nick Kravch"
 
-#define   ExeName    "SAM.exe"
+#define   ExeName    "System Activity Monitor.exe"
 
-#define Version GetFileVersion("F:\Installed Programs\System Activity monitor.exe")
+#define Version GetFileVersion("C:\projects\system-activity-monitor-new\System Activity Monitor\bin\Debug\System Activity Monitor.exe")
 
 
 [Setup]
@@ -39,7 +39,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 
-Source: "F:\Installed Programs\System Activity monitor.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\projects\system-activity-monitor-new\System Activity Monitor\bin\Debug\System Activity Monitor.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ;Source: "D:\ProjectsVS\Organizer\Organizer\bin\Debug\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
@@ -109,7 +109,7 @@ var
   sUnInstallString: string;
 begin
   Result := True; 
-  if RegValueExists(HKEY_LOCAL_MACHINE,'Software\Microsoft\Windows\CurrentVersion\Uninstall\{AC03F9D1-C6E2-4036-97D1-782EC48454D0}_is1', 'UninstallString') then  //Your App GUID/ID
+  if RegValueExists(HKEY_LOCAL_MACHINE,'Software\Microsoft\Windows\CurrentVersion\Uninstall\{42C8001E-B924-44A3-86BC-D5753EF3E837}_is1', 'UninstallString') then  //Your App GUID/ID
   begin
     V := MsgBox(ExpandConstant('Hey! An old version of app was detected. Do you want to uninstall it?'), mbInformation, MB_YESNO); 
     if V = IDYES then
