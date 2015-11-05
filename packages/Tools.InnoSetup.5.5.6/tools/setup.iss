@@ -17,13 +17,12 @@ AppVerName={#ExeName} {#Version}
 AppVersion={#Version}
 
 DefaultDirName={pf}\{#Name}
-
 DefaultGroupName={#Name}
 
-OutputDir={#SourcePath}
-OutputBaseFileName=ProjectSetup
+OutputDir=..\..\..\Setup
+OutputBaseFileName=projsetup0.0.1
 
-SetupIconFile=F:\Installed Programs\Artua-Mac-Activity-Monitor.ico
+;SetupIconFile=F:\Installed Programs\Artua-Mac-Activity-Monitor.ico
 
 Compression=lzma
 SolidCompression=yes
@@ -47,9 +46,9 @@ Source: "C:\projects\system-activity-monitor-new\System Activity Monitor\bin\Deb
 
 [Icons]
 
-Name: "{group}\{{Organizer}"; Filename: "{app}\{{Organizer.exe}"
+;Name: "{group}\{{Organizer}"; Filename: "{app}\{{Organizer.exe}"
 
-Name: "{commondesktop}\{{Organizer}"; Filename: "{app}\{{Organizer.exe}"; Tasks: desktopicon
+;Name: "{commondesktop}\{{Organizer}"; Filename: "{app}\{{Organizer.exe}"; Tasks: desktopicon
 
 [Code]
 
