@@ -18,7 +18,6 @@ AppId={{42C8001E-B924-44A3-86BC-D5753EF3E837}
 
 ; Прочая информация, отображаемая при установке
 AppName={#Name}
-AppVerName={#ExeName} {#Version}
 AppVersion={#Version}
 AppPublisher={#Publisher}
 
