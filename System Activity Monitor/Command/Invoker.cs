@@ -19,5 +19,10 @@ namespace System_Activity_Monitor.Command
         {
             this._command = command;
         }
+
+        public void AcEvent()
+        {
+            _command.Execute();
+        }
     }
 }
